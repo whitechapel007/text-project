@@ -56,7 +56,18 @@ const Loader = styled.div`
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 30%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  @media (min-width: 600px) {
+    left: 45%;
+  }
   @keyframes spin {
     0% {
       transform: rotate(0deg);
